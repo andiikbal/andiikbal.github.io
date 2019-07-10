@@ -5,6 +5,20 @@
        url('../fonts/google-font/Raleway-Regular.ttf') format('truetype');
 }
 
+@font-face {
+  font-family: 'Raleway-Light';
+  src: url('../fonts/google-font/Raleway-Light.ttf');
+  src: url('../fonts/google-font/Raleway-Light.ttf') format('ttf'),
+       url('../fonts/google-font/Raleway-Light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Raleway-Bold';
+  src: url('../fonts/google-font/Raleway-Bold.ttf');
+  src: url('../fonts/google-font/Raleway-Bold.ttf') format('ttf'),
+       url('../fonts/google-font/Raleway-Bold.ttf') format('truetype');
+}
+
 html {
   position: relative;
 }
@@ -16,9 +30,13 @@ body {
 }
 
 .navbar {
-  /* font-family: 'Raleway-Regular'; */
+  font-family: 'Raleway-Light';
   margin-bottom: 0px;
   box-shadow: 1px 1px 5px rgba(255, 255, 255, 0.5);
+}
+
+.navbar .navbar-header .navbar-brand {
+  font-family: 'Raleway-Bold'
 }
 
 .jumbotron {
@@ -43,6 +61,10 @@ body {
   text-shadow: 1px 1px 10px rgba(0,0,0,0.5);
 }
 
+.jumbotron h1 {
+  font-family: 'Raleway-Bold';
+}
+
 hr {
   width: 250px;
   border-top: 3px solid #999;
@@ -52,7 +74,12 @@ section {
   min-height: 600px;
 }
 
+section h2 {
+  font-family: 'Raleway-Bold';
+}
+
 .pKiri, .pKanan {
+  font-size: 1.1em;
   opacity: 0;
   transform: translate(0px, 0) rotate(5deg);
   transition: 1s;
