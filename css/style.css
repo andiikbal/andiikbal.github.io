@@ -1,13 +1,22 @@
+@font-face {
+  font-family: 'Raleway-Regular';
+  src: url('../fonts/google-font/Raleway-Regular.ttf');
+  src: url('../fonts/google-font/Raleway-Regular.ttf') format('ttf'),
+       url('../fonts/google-font/Raleway-Regular.ttf') format('truetype');
+}
+
 html {
   position: relative;
 }
 
 body {
+  font-family: 'Raleway-Regular';
   margin-bottom: 100px;
   margin-top: 50px;
 }
 
 .navbar {
+  /* font-family: 'Raleway-Regular'; */
   margin-bottom: 0px;
   box-shadow: 1px 1px 5px rgba(255, 255, 255, 0.5);
 }
